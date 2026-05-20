@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.kirowebreleasebinder/kirowebreleasebinder-mcp",
+  "description": "Kiro Web Release Binder is a paid remote MCP release gate for Kiro projects, release goals, acceptance criteria, owner signoff, evidence binders, and CI-friendly approval receipts.",
+  "version": "1.0.0",
+  "website_url": "https://kirowebreleasebinder.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/kiro-web-release-binder-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kirowebreleasebinder.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "Kiro Web Release Binder MCP",
+      "server_card_url": "https://kirowebreleasebinder.clauxel.com/server-card.json"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# Kiro Web Release Binder MCP
+
+Kiro Web Release Binder is a paid remote MCP release gate for Kiro projects, release goals, acceptance criteria, owner signoff, evidence binders, and CI-friendly approval receipts.
+
+Website: https://kirowebreleasebinder.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: Kiro IDE release readiness MCP
+Type: MCP
+Default plan: Team
+MCP endpoint: https://kirowebreleasebinder.clauxel.com/mcp
+Server card: https://kirowebreleasebinder.clauxel.com/server-card.json
+Registry name: com.clauxel.kirowebreleasebinder/kirowebreleasebinder-mcp
+Tools: check_kiro_release_readiness, collect_release_evidence, request_owner_signoff, issue_release_receipt, export_release_binder
+
+Public boundary: docs-only repository; no production source code or secrets.

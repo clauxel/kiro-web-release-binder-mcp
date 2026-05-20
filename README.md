@@ -2,47 +2,44 @@
 
 Turn Kiro-generated work into release evidence agents can trust.
 
-Paid remote MCP for Kiro release readiness checks, evidence binders, owner signoff, release receipts, and CI approval gates.
+Kiro Web Release Binder is a paid remote MCP release gate for Kiro projects, release goals, acceptance criteria, owner signoff, evidence binders, and CI-friendly approval receipts.
 
-## Public Endpoints
+This is a public documentation project for Kiro Web Release Binder MCP. The structure is modeled after the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and public-safe architecture notes.
 
-- Website: https://kirowebreleasebinder.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://kirowebreleasebinder.clauxel.com/mcp
+## Start Here
+
+- Website: https://kirowebreleasebinder.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=kirowebreleasebinder_public_docs&utm_content=readme_primary_home
+- Pricing: https://kirowebreleasebinder.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=kirowebreleasebinder_public_docs&utm_content=readme_pricing
+- Checkout: https://kirowebreleasebinder.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=kirowebreleasebinder_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://kirowebreleasebinder.clauxel.com/mcp
 - Server card: https://kirowebreleasebinder.clauxel.com/server-card.json
 - Registry name: `com.clauxel.kirowebreleasebinder/kirowebreleasebinder-mcp`
+- Tools: `check_kiro_release_readiness`, `collect_release_evidence`, `request_owner_signoff`, `issue_release_receipt`, `export_release_binder`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+AI IDE teams, delivery leads, release managers, and client-service studios.
 
-## Tools
+## Capabilities
 
-- `check_kiro_release_readiness`
-- `collect_release_evidence`
-- `request_owner_signoff`
-- `issue_release_receipt`
-- `export_release_binder`
+- release policy rules
+- Kiro project intake
+- evidence checklist
+- owner signoff
+- tool-call receipts
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://kirowebreleasebinder.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://kirowebreleasebinder.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://kirowebreleasebinder.clauxel.com/server-card.json
-- MCP endpoint: https://kirowebreleasebinder.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
